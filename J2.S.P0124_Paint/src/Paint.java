@@ -15,7 +15,7 @@ import java.awt.Point;
  * @author Minh Thanh
  */
 public class Paint extends javax.swing.JFrame {
-
+	// ffffs
     /**
      * Creates new form Paint
      */
