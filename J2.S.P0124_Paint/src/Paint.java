@@ -37,18 +37,16 @@ public class Paint extends javax.swing.JFrame {
         g = jPanel1.getGraphics();
         Graphics2D g1 = (Graphics2D) g;
         g1.setStroke(bs);
-          /* protected Connection connection;
-
-    public DBContext() throws ClassNotFoundException {
+          // db context
+    public Connection getConnection() throws Exception {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        try {
-            connection = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;"
-                    + "databaseName = Abc;"
-                    + "integratedSecurity = true;");
-        } catch (SQLException ex) {
-            System.out.println(ex);
-        }
-    }*/
+        String url = ("jdbc:sqlserver://"
+                + "localhost" + ":"
+                + "1433" + ";databaseName="
+                + "J2SP0021" + ";integratedSecurity=true;");
+
+        return DriverManager.getConnection(url);
+    }
     }
 
     /**
