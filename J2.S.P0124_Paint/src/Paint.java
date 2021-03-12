@@ -38,7 +38,7 @@ public class Paint extends javax.swing.JFrame {
         Graphics2D g1 = (Graphics2D) g;
         g1.setStroke(bs);
           // db context
-    public Connection getConnection() throws Exception {
+    /* public Connection getConnection() throws Exception {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String url = ("jdbc:sqlserver://"
                 + "localhost" + ":"
@@ -46,7 +46,7 @@ public class Paint extends javax.swing.JFrame {
                 + "J2SP0021" + ";integratedSecurity=true;");
 
         return DriverManager.getConnection(url);
-    }
+    } */
     }
 
     /**
